@@ -3,8 +3,8 @@
 :root {
 /*-------Typography-------*/
     font-family: 'Jost', sans-serif; 
-    --color-color-black:black;
-    --color-color-white:#ffffff;
+    --color-text-black:black;
+    --color-text-white:#ffffff;
     font-size: 16px;
     /*Font weight---Desktop*/
     --font-weight-desktop-light: 300;
@@ -53,11 +53,18 @@
 
 /*-------Tags-------*/
 
-.header {
+header {
     background-color:#000;
     display: flex;
+}
+p {
+    color: var(--color-text-white);
+}
+
+ul {
     
 }
+
 .heroBanner {
     background-color: #000;
     margin: 2rem;
@@ -66,20 +73,29 @@
 }
 
 .heropara {
-    color: var(--color-color-white);
+    color: var(--color-text-white);
 }
 
 .carduuninja {
-    border-radius: var(--border-radius-big);
-    border: var(--border);
     background-color: var(--color-UUN-black);
 }
 
 .cardallthepets {
-    border-radius: var(--border-radius-big);
-    border: var(--border);
     background-color: var(--color-ATP-black);
 }
+
+.card {
+    border-radius: var(--border-radius-big);
+    border: var(--border);
+    margin: 2.75rem;
+    
+}
+
+.cardpara {
+    font-size: var(--font-size-desktop-bodycopy);
+
+}
+
 .heroimg {
     
 }
@@ -87,3 +103,9 @@
 .herotext {
     display: block;
 }
+
+.buttoncolor {
+
+}
+
+
