@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+/*-------Typography-------*/
+    font-family: 'Jost', sans-serif; 
+    --color-color-black:black;
+    --color-color-white:#ffffff;
+    font-size: 16px;
+    /*Font weight---Desktop*/
+    --font-weight-desktop-light: 300;
+    --font-weight-desktop-regular: 400;
+    --font-weight-desktop-bold: 700;
+    
+    /*Font weight---Mobil*/
+    --font-weight-mobil-regular: 400;
+    --font-weight-mobil-medium: 500;
+   /*Font size---Desktop*/
+   --font-size-desktop-h1:4rem;
+    --font-size-desktop-h2:3rem;
+    --font-size-desktop-h3:2.25rem;
+    --font-size-desktop-subtitle:1.25rem;
+    --font-size-desktop-bodycopy:1rem;
+    --font-size-desktop-buttontext:1rem;
+    --font-size-desktop-fotnote:0.75rem;
+    --font-size-desktop-herotext:6rem;
+    --font-size-desktop-link:1.5rem;
+    /*Font size---Mobil*/
+    --font-size-mobil-h1:3rem;
+    --font-size-mobil-h2:2.25rem;
+    --font-size-mobil-h3:1.5rem;
+    --font-size-mobil-subtitle:1.25rem;
+    --font-size-mobil-bodycopy:1rem;
+
+
+/*-------Colors-------*/
+    --color-light-UUN:#e5d4ff;
+    --color-dark-UUN:#c79cff;
+
+    --color-UUN-black:#000000;
+    --color-UUN-white:#ffffff;
+
+    --color-light-ATP:#9bf1ff;
+    --color-dark-ATP:#4be6ff;
+
+    --color-ATP-black:#000000;
+    --color-ATP-white:#ffffff;
+/*------Border-------*/
+    --border-radius-big:2rem;
+    --border-radius-small:1rem;
+    --border:0.4rem solid #000;
+
+}
+
+/*-------Tags-------*/
+
+.header {
+    background-color:#000;
+    display: flex;
+    
+}
+.heroBanner {
+    background-color: #000;
+    margin: 2rem;
+    border-radius: var(--border-radius-big);
+    display: flex;
+}
+
+.heropara {
+    color: var(--color-color-white);
+}
+
+.carduuninja {
+    border-radius: var(--border-radius-big);
+    border: var(--border);
+    background-color: var(--color-UUN-black);
+}
+
+.cardallthepets {
+    border-radius: var(--border-radius-big);
+    border: var(--border);
+    background-color: var(--color-ATP-black);
+}
+.heroimg {
+    
+}
+
+.herotext {
+    display: block;
+}
