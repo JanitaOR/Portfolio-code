@@ -99,8 +99,15 @@ a {
     margin: 2rem 5rem;
 }
 .icon_container {
+    display: flex;
+    background-color: var(--color-UUN-white);
+    justify-content: center;
+    border-radius: var(--border-radius-small);
+    padding: 1rem;
+    
 
 }
+
 .icons {
     height: 2.5rem;
     margin: 0 0.5rem;
@@ -158,7 +165,7 @@ a {
     justify-content: space-between;
 }
 .frontpage_uuninja_img {
-  width: 0%;
+  width: 100%;
 }
 @media screen and (min-width: 700px) {
     .frontpage_uuninja_img {
@@ -230,6 +237,19 @@ a {
 
 /*--------- prosjekt: uuninja--------*/
 
+.oppgave_icon {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-UUN-white);
+    border-radius: var(--border-radius-small);
+    
+}
+.ninja_smile {
+    width: 50%;
+    padding: 2rem;
+}
+
+
 .personas_img {
     width: 40%;
     padding: 1rem;
@@ -262,12 +282,25 @@ a {
 }
 .size_3_colum {
     width: 50%;
+    
 }
 .size_2_colum {
     width: 50%;
 }
 .link {
     display: block;
+}
+.back_to_start {
+    display: flex;
+    justify-content: center;
+
+}
+
+.back_button {
+    color: var(--color-text-white);
+    background-color: var(--color-UUN-black);
+    padding: 1rem;
+    border-radius: var(--border-radius-small);
 }
 
 /*
