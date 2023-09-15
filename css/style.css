@@ -44,6 +44,9 @@
 
     --color-ATP-black:#212121;
     --color-ATP-white:#ffffff;
+
+    --color-button-uun: var(--color-light-UUN);
+    --color-button-atp: var(--color-light-ATP);
 /*------Border-------*/
     --border-radius-big:2rem;
     --border-radius-small:1rem;
@@ -60,11 +63,17 @@ header {
     padding: 0.5rem;
     margin: 0  0 3rem 0;
 }
+.logo {
+    align-self: center;
+    margin: 0.5rem;
+    max-width: 150px;
+    height: auto; 
+}
 nav {
     
 }
 a {
-
+    color: var(--color-text-white);
 }
 li {
     margin: 1rem;
@@ -76,6 +85,7 @@ ul {
     display: flex;
     align-items: center;
 }
+
 p {
     color: var(--color-text-white);
     font-size: var(--font-size-desktop-bodycopy);
@@ -89,74 +99,159 @@ footer {
 }
 h1 {
     text-align: center;
+    font-size: var(--font-size-mobil-h1);
+    font-weight: var(--font-weight-mobil-regular);
 }
 h2 {
     color: var(--color-text-black);
+    font-weight: var(--font-weight-mobil-regular);
+    font-size: var(--font-size-mobil-h2);
 }
 h3 {
     color: var(--color-text-white);
+    font-weight: var(--font-weight-mobil-regular);
+    font-size: var(--font-size-mobil-h3);
 }
+
 
 
 /*--------index------*/
-.logo {
-    align-self: center;
-    margin: 1rem;
-    max-width: 100px;
-    height: auto; 
-}
+
 
 .hero_banner {
-    display: flex;
-    background-color: #212121;
-    margin: 2rem;
-    border-radius: var(--border-radius-big);
-    padding: 2.5rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+        display: flex;
+        background-color: #212121;
+        margin: 2rem;
+        border-radius: var(--border-radius-big);
+        padding: 2.5rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
 }
 
 .hero_img {
-    width: 50%;
+    width: 40%;
+   
 }
 .hero_text {
-    width: 50%;
+    width: 100%;
+    
 }
 
-.card_uuninja {
-    background-color: var(--color-UUN-black);
-    border: var(--border);
+/*-----universal classer-----*/
+.card {
     border-radius: var(--border-radius-big);
+    margin: 4rem;
 }
-.card_heading {
-    background-color: var(--color-dark-UUN);
+.card_header {
+    padding: 1rem;
     border-radius: 2rem 2rem 0 0;
-}
-.card_heading_color_uuninja {
-    background-color: var(--color-UUN-white);
-}
-.card_heading_color_atp {
-    background-color: var(--color-ATP-white);
+    border: var(--border);
     
 }
 .icon_container {
-
+    align-items: baseline;
+    display: flex;
 }
 .icon {
+    height: 2.5rem;
+    margin: 0 0.5rem;
     
 }
 .card_button {
+    padding: 1rem 2rem;
+    font-size: var(--font-size-desktop-buttontext);
+    border-radius: var(--border-radius-small);
+    font-weight: var(--font-weight-desktop-bold);
+    margin: 2rem;
+}
+.card_text {
+    margin: 1rem;
+}
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.flex_grid_container {
+    /*denne er flex over vw 900px*/
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}   
+
+
+
+/*-----uuninja-----*/
+
+/*--index--*/
+
+.card_uuninja {
+    background-color: var(--color-UUN-black);
+}
+
+.card_header_color_uuninja {
+    background-color: var(--color-UUN-white);
+}
+.button_uuninja {
+    background-color: var(--color-button-uun);
 }
 .card_img_uuninja {
+    justify-self: center;
+    margin: 2rem;
+    width: 70%;
+}
+ /*FIKS ORDER*/
+.order_atp_img {
+    order: 2;
+}
+.order_atp_text {
+    order: 1;
+}
 
+
+/*--prosjektside uuninja--*/
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------*/
+
+/*-----all the pets-----*/
+
+/*--index--*/
+.card_atp {
+    background-color: var(--color-ATP-black);
+    border-radius: var(--border-radius-big);
+}
+.card_header_color_atp {
+    background-color: var(--color-ATP-white);
+    
+}
+.button_atp {
+    background-color: var(--color-button-atp);
 }
 .card_img_atp {
     width: 50%;
     border-radius: var(--border-radius-small);
-    border: 5px solid #212121;
+    margin: 1rem;
+    justify-self: center;
 }
+
+/*--prosjektside atp--*/
+
+
+
 
 
 
@@ -166,3 +261,85 @@ h3 {
 .h2_footer {
     color: var(--color-text-white);
 }
+
+
+
+
+
+/*--------media query----------*/
+
+
+@media screen and (min-width: 700px) {
+    .card_img_atp {
+        width: 50%;
+    }
+    .hero_banner {
+        flex-wrap: nowrap;
+    }
+    .hero_img {
+        display: flex;
+        width: 40%;
+        justify-self: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: var(--font-size-desktop-h1);
+        font-weight: var(--font-weight-desktop-bold);
+    }
+    h2 {
+        color: var(--color-text-black);
+        font-weight: var(--font-weight-desktop-regular);
+        font-size: var(--font-size-desktop-h2);
+    }
+    h3 {
+        color: var(--color-text-white);
+        font-weight: var(--font-weight-desktop-regular);
+        font-size: var(--font-size-desktop-h3);
+    }
+
+
+
+
+
+}
+@media screen and (min-width: 900px) {
+    .flex_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }   
+    .card_img_uuninja {
+        margin: 2rem;
+        width: 40%;
+    }
+    .card_img_atp {
+        width: 30%;
+        border-radius: var(--border-radius-small);
+        margin: 1rem;
+    }
+    .flex_grid_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }   
+    .order_atp_img {
+        order: 1;
+    }
+    .order_atp_text {
+        order: 2;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
