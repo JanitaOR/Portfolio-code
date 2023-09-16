@@ -61,20 +61,48 @@ header {
     background-color: #212121;
     display: flex;
     padding: 0.5rem;
-    margin: 0  0 3rem 0;
+    justify-content: space-between;
 }
 .logo {
     align-self: center;
     margin: 0.5rem;
     max-width: 150px;
     height: auto; 
-}
-nav {
     
 }
+nav {
+    display: flex;
+}
+/*
+når jeg kan sette opp en hamburgerment skal denne aktiveres
+nav {
+    display: none;
+}
+.menu {
+    display: flex;
+
+}*/
+
 a {
     color: var(--color-text-white);
 }
+
+.a_button:link, .a_button:visited {
+    background-color: var(--color-light-ATP);
+    color: var(--color-text-black);
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: var(--border-radius-big);
+  }
+  
+  .a_button:hover, .a_button:active {
+    background-color: var(--color-dark-ATP);
+  }
+
+
+
 li {
     margin: 1rem;
     color: var(--color-text-white);
@@ -112,6 +140,10 @@ h3 {
     font-weight: var(--font-weight-mobil-regular);
     font-size: var(--font-size-mobil-h3);
 }
+h4 {
+    color: var(--color-text-white);
+
+}
 
 
 
@@ -130,31 +162,41 @@ h3 {
 
 .hero_img {
     width: 40%;
-   
+    margin: auto;
 }
 .hero_text {
     width: 100%;
     
 }
 
+.first_card {
+    border-radius: var(--border-radius-big);
+    margin: 1rem 5rem 5rem 5rem;
+}
+
 /*-----universal classer-----*/
 .card {
     border-radius: var(--border-radius-big);
-    margin: 4rem;
+    margin: 5rem;
 }
 .card_header {
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 2rem 2rem 0 0;
     border: var(--border);
     
 }
 .icon_container {
     align-items: baseline;
+    justify-content: center;
     display: flex;
+    background-color: var(--color-text-white);
+    border-radius: var(--border-radius-small);
 }
 .icon {
-    height: 2.5rem;
+    height: 3rem;
     margin: 0 0.5rem;
+    width: 3rem;
+    padding: 0.5rem;
     
 }
 .card_button {
@@ -165,7 +207,8 @@ h3 {
     margin: 2rem;
 }
 .card_text {
-    margin: 1rem;
+    padding: 1rem;
+    display: grid;
 }
 .flex_container {
     display: flex;
@@ -182,6 +225,44 @@ h3 {
     flex-wrap: wrap;
     padding: 1rem;
 }   
+.flex_grid_container_text {
+    /*denne er flex over vw 900px*/
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}   
+.hero_banner_projects {
+    display: flex;
+    background-color: #212121;
+    margin: 2rem;
+    border-radius: var(--border-radius-big);
+    padding: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_img {
+    width: 40%;
+    padding: 2rem;
+    justify-self: center; /*fjernes?*/
+}
+
+.full_size_img {
+    width: 100%;
+    margin: auto;
+}
+
+.img_hero_project {
+    width: 50%;
+}
+/*bruker jeg denne?
+.button_text {
+    color: var(--color-text-black);
+}*/
+
+
+
+  
 
 
 
@@ -212,8 +293,25 @@ h3 {
     order: 1;
 }
 
+.a_button_uuninja:link, .a_button_uuninja:visited {
+    background-color: var(--color-light-UUN);
+    color: var(--color-text-black);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: var(--border-radius-big);
+    font-size: var(--font-size-desktop-buttontext);
+    font-weight: var(--font-weight-desktop-bold);
+  }
+  
+  .a_button_uuninja:hover, .a_button_uuninja:active {
+    background-color: var(--color-dark-UUN);
+  }
 
 /*--prosjektside uuninja--*/
+
+
 
 
 
@@ -240,6 +338,7 @@ h3 {
 }
 .button_atp {
     background-color: var(--color-button-atp);
+   
 }
 .card_img_atp {
     width: 50%;
@@ -248,7 +347,119 @@ h3 {
     justify-self: center;
 }
 
+.a_button_atp:link, .a_button_atp:visited {
+    background-color: var(--color-light-ATP);
+    color: var(--color-text-black);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: var(--border-radius-big);
+    font-size: var(--font-size-desktop-buttontext);
+    font-weight: var(--font-weight-desktop-bold);
+  }
+  
+  .a_button_atp:hover, .a_button_atp:active {
+    background-color: var(--color-dark-ATP);
+  }
+
 /*--prosjektside atp--*/
+
+.hero_img_atp {
+    width: 40%;
+}
+.icon_container_atp {
+    display: grid;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: var(--color-text-white);
+    border-radius: var(--border-radius-small);
+}
+.icon_atp {
+    height: 3rem;
+    width: 3rem;
+    padding: 0.5rem;
+}
+.flex_grid_container_atp {
+    /*denne er flex over vw 900px*/
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}   
+
+.img_landingsside {
+    width: 40%;
+    margin: auto;
+    background-color: var(--color-ATP-white);
+    border-radius: var(--border-radius-small);
+}
+.grid_landingpage {
+    display: grid;
+    justify-items: end;
+}
+
+
+
+
+/*-------back buttons------*/
+
+.back_container {
+    display: flex;
+    padding: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.back_button {
+    padding: 1rem 2rem;
+    font-size: var(--font-size-desktop-buttontext);
+    border-radius: var(--border-radius-small);
+    font-weight: var(--font-weight-desktop-bold);
+    margin: 2rem;
+    background-color: var(--color-button-uun);
+}
+.h3_back {
+    color: var(--color-text-black);
+}
+
+.next_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.back_img {
+    width: 20vw;
+}
+
+
+
+/*----------about----------*/
+
+.h3_about {
+    color: var(--color-text-black);
+}
+.p_about {
+    color: var(--color-text-black);
+}
+.icon_about {
+    text-align: center;
+}
+.tools_container {
+    border: var(--border);
+    border-radius: var(--border-radius-big);
+    margin: 5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.profil_img {
+    width: 40%;
+    margin: auto;
+    border-radius: var(--border-radius-small);
+    border: 3px solid #ffffff;
+}
+
+
 
 
 
@@ -260,6 +471,10 @@ h3 {
 
 .h2_footer {
     color: var(--color-text-white);
+}
+.p_footer {
+    color: var(--color-text-white);
+    font-size: var(--font-size-desktop-buttontext);
 }
 
 
@@ -298,6 +513,19 @@ h3 {
     }
 
 
+    /*når jeg kan sette opp en hamburgerment skal denne aktiveres
+
+    @media screen and (min-width: 800px) {
+        nav {
+            display: flex;
+        }
+        .menu {
+            display: flex;
+        }
+    }
+*/
+
+
 
 
 
@@ -324,6 +552,22 @@ h3 {
         align-items: center;
         flex-wrap: nowrap;
     }   
+    .flex_grid_container_atp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }   
+    .grid_landingpage {
+        display: grid;
+        j
+       
+        
+    }
+    
+   
+    
+    
     .order_atp_img {
         order: 1;
     }
@@ -331,12 +575,14 @@ h3 {
         order: 2;
     }
 
-
-
-
-
 }
-
+@media screen and (min-width: 1000px) {
+    .flex_grid_container_text {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }   
+}
 
 
 
