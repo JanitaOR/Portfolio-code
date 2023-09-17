@@ -7,503 +7,544 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
 </head>
-
-<!--header-->
-
-
-
-<!--Herobanner-->
-
-<section class="hero_banner flex_container">
-    <img src="./assets/all the pets/hero_all_the_pets.svg" alt="" class="img_hero">
-    <img src="./assets/all the pets/hero_img_atp.svg" alt="" class="img_hero">
+<body>
+    <!--header-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style_hamburger.css">
+        <title>Portfolio</title>
+    </head>
     
-    
-</section>
-
-
-<!--oppgave-->
-
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Oppgave</h2>
-       
-    </div>
-    <div class="card_body">
-        <div class="card_text">
-            <p>
-                Dette er et individuelt 
-                skoleprosjekt hvor vi skulle 
-                løse et hverdagsproblem eller 
-                et problem du ser ute i samfunnet. 
-            </p>
-            <h3>Tidsbruk:</h3>
-            <p>
-                6 uker
-            </p>
-            <h3>Levering:</h3>
-            <p>En prototype av løsningen og en 
-                landingside for den.</p>
-        </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <section class="top-nav">
         <div>
-            <h3>Verktøy som ble brukt</h3>
-            <div>
-                <div class="icon_container">
-                    <div class="flex_container">
-                        <img src="./assets/Icon/Figma.svg" alt="" class="">  
-                        <img src="./assets/Icon/VSCode.svg" alt="" class="">
-                    </div> 
-                    <div class="flex_container">
-                        <img src="./assets/Icon/Notion.svg" alt="" class="">  
-                        <img src="./assets/Icon/Github.svg" alt="" class="">
-                    </div>
-                    <!--
-                    <div>   
-                    </div>
-                    <div>    
-                    </div>
-                    <div> 
-                    </div>
-                    -->
-                </div>
-            </div>
+          <img src="./assets/Logo big.svg" alt="" class="logo">
         </div>
-       
-    </div>
-</section>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li><a href="Index.html#projects">Prosjekter</a></li>
+          <li><a href="om_meg.html">Om meg</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li>CV</li>
+        </ul>
+      </section>
+    <!--Herobanner-->
+    <main>
+        <section class="hero_banner_projects flex_grid_container">
+            <img src="./assets/all the pets/hero_all_the_pets.svg" alt="" class="hero_img">
+            <img src="./assets/all the pets/hero_img_atp.svg" alt="" class="hero_img">
+        </section>
 
+        <!--oppgave-->
 
-<!--prosessen min-->
-
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Prosessen min</h2>
-       
-    </div>
-    <div class="card_body">
-        <div class="card_text">
-            <div>
-                <h3>Design thinking</h3>
-                <p>
-                    Jeg har brukt Design 
-                    thinking metodikken i 
-                    prosessen min. Dette er 
-                    en brukersentrert tilnærming 
-                    for å løse problemer og utvikle 
-                    innovative løsninger. Design 
-                    thinking involverer å forstå 
-                    brukernes behov, generere ideer, 
-                    lage prototyper og teste løsninger. 
-                    Målet er å skape brukervennlige 
-                    og nyskapende produkter eller 
-                    tjenester gjennom iterativ læring 
-                    og samarbeid.
-                </p>
-                <img src="" alt="" class="">
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Oppgave</h2>
             </div>
-            <div>
-                <img src="" alt="" class="">
-                <p>
-                    I prosessen brukte jeg Notion 
-                    for å holde styr på tiden min 
-                    med å dele opp oppgaven i 3 sprint.
-                </p>
-                <ul>
-                    <li>Research</li>
-                    <li>Prototype</li>
-                    <li>Code</li>
-                </ul>
-            </div>
-            <p>
-                Jeg har brukt Design 
-                thinking metodikken i 
-                prosessen min. Dette er 
-                en brukersentrert tilnærming 
-                for å løse problemer og utvikle 
-                innovative løsninger. Design 
-                thinking involverer å forstå 
-                brukernes behov, generere ideer, 
-                lage prototyper og teste løsninger. 
-                Målet er å skape brukervennlige 
-                og nyskapende produkter eller 
-                tjenester gjennom iterativ læring 
-                og samarbeid.
-            </p>
-            <img src="" alt="" class="">
-        </div>
-       
-    </div>
-</section>
-
-
-<!--Et problem å løse-->
-
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Et problem å løse</h2>
-       
-    </div>
-    <div class="card_body">
-        <div class="card_text">
-            <p>
-                Jeg begynte med å utforske hverdagsproblemer 
-                folk kan stå ovenfor og kom opp med dette: 
-                Et typisk problem jeg og en del andre 
-                hundeeiere jeg kjenner har, er at vi 
-                aldri husker når vi for eksempel 
-                klippet klør på hundene sist. Det 
-                samme kan skje med sykehistorie og 
-                behandling. Her er det lett å miste 
-                oversikt. Og løpetid? Ja når var det? 
-                Derfor ville jeg vite om det var flere 
-                som savnet en app som samlet slik 
-                informasjon. Jeg hadde også behov for 
-                å vite hvilke data de ville ha 
-                loggført?
-            </p>
-            <div class="flex_container">
-                <div>
-                    <h3>Målgruppe</h3>
+            <div class="card_text flex_grid_container">
+                <div class="card_text">
                     <p>
-                        Primært dyreeiere som trenger et 
-                        system for alt av data rundt 
-                        dyreholdet sitt. En sekundær 
-                        målgruppe jeg ikke hadde tenkt 
-                        på i utgangspunktet er oppdrettere 
-                        som trenger et system for alt av 
-                        data rundt oppdrettet sitt.
+                        Dette er et individuelt 
+                        skoleprosjekt hvor vi skulle 
+                        løse et hverdagsproblem eller 
+                        et problem du ser ute i samfunnet. 
                     </p>
-                </div>
-                <div>
-                    <h3>Problemstilling</h3>
+                    <h3>Tidsbruk:</h3>
                     <p>
-                        Hvordan hjelpe dyreeiere med 
-                        organisering og oppbevaring av 
-                        informasjon rundt dyreholdet sitt?
+                        6 uker
                     </p>
-                </div>
-            </div>
-            
-        </div>
-       
-    </div>
-</section>
-
-
-<!--innsikt-->
-
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Innsikt</h2>
-       
-    </div>
-    <div class="card_body">
-        <div class="card_text">
-            <p>
-                Med tanke på mitt eget problem med 
-                organisering av mitt hundehold 
-                undersøkte jeg om det allerede 
-                fantes apper som dekket dette 
-                problemet på markedet.
-            </p>
-            <div class="flex_container">
-                <div class="p_right">
-                    <h3>Apper på markedet</h3>
-                    <p class="">
-                        Det første jeg legger merke 
-                        til er at jeg finner bare en 
-                        app på norsk. Ellers er det 
-                        stort sett engelske. Det er 
-                        veldig variabelt hvor mye de 
-                        forskjellige appene har av 
-                        funksjoner. Noen har lite og 
-                        andre har mye. En spesiell 
-                        funksjon jeg fant, som jeg syntes 
-                        var moro, var å kunne samle en 
-                        «flokk». Det vil si alle du er 
-                        sammen med som har dyr kan linke 
-                        seg sammmen og kunne kommentere 
-                        på hva de andre har lagt ut av 
-                        eventer.
-                    </p>
+                    <h3>Levering:</h3>
+                    <p>En prototype av løsningen og en 
+                        landingside for den.</p>
                 </div>
                 <div class="">
-                    <img src="./assets/all the pets/konkurent1.jpeg" alt="" class="img_small">
-                    <img src="./assets/all the pets/konkurent2.PNG" alt="" class="img_small">
-                    <img src="./assets/all the pets/konkurent3.PNG" alt="" class="img_small">
+                    <h3>Verktøy som ble brukt</h3>
+                    <div class="icon_container_atp">
+                        <div class="flex_container">
+                            <img src="./assets/Icon/Figma.svg" alt="" class="icon_atp">  
+                            <img src="./assets/Icon/VSCode.svg" alt="" class="icon_atp">
+                        </div> 
+                        <div class="flex_container">
+                            <img src="./assets/Icon/Notion.svg" alt="" class="icon_atp">  
+                            <img src="./assets/Icon/Github.svg" alt="" class="icon_atp">
+                        </div>
+                    </div>
                 </div>
-                
             </div>
-            <h3>Spørreundersøkelse</h3>
-            <p>
-                Etter å ha undersøkt markedet gjorde 
-                jeg en spørreundersøkelse på flere 
-                facebook sider. Jeg spurte om det 
-                var flere som hadde det samme 
-                problemet med dyreholdet sitt som 
-                jeg opplever, om de viste om slike 
-                apper og hvilke data de eventuelt 
-                ville ha loggført.
-            </p>
-            <h3>Intervju</h3>
-            <p>
-                Jeg intervjuet dyreiere for å få et 
-                mer helhetlig bilde og ved et av 
-                intervjuene fant jeg en målgruppe som 
-                jeg ikke hadde tenkt på, den tidligere 
-                nevnte lille overraskelsen. Dette er 
-                oppdrettere som trenger å sjonglere 
-                med mye papirer og informasjon for 
-                flere dyr. Både avlsdyr og valper i 
-                dette tilfelle. 
-            </p>
-            <p>
-                Blandt annet hadde påminnelser og 
-                lister som kunne gjennbrukes gjøre 
-                det enklere å holde oversikt over 
-                alt man trenger å huske når det 
-                forventes valper. Å ha alle papirer 
-                samlet når valpene skal til sine nye 
-                hjem hadde også gjort det enklere for 
-                denne gruppen og de nye eierne som også 
-                kunne fått alt samlet på et sted.
-            </p>
-            <h3>Oppsummering av innsikt</h3>
-            <p>
-                I innsikten fant jeg et potensiale 
-                og en plass for et produkt som All 
-                the pets. I følge spørreundersøkelsen 
-                min ville potensielt 2 av 3 dyreeiere 
-                brukt en slik app. Oppdrettere hadde 
-                trolig ønsket et verktøy hvor de kan 
-                samle informasjon som ellers blir 
-                oppbevart på forskjellige steder og 
-                forum, og lett glemmes.
-            </p>
-        </div>
-       
-    </div>
-</section>
+        </section>
 
+        <!--prosessen min-->
 
-<!--Personas-->
-
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Personas</h2>
-       
-    </div>
-    <div class="card_body">
-        <div class="card_text">
-            <p>
-                Basert på innsikten jeg har gjorde 
-                lagde jeg disse peronasene.
-            </p>
-            <div class="personas_container">
-                <img src="./assets/all the pets/Personas 1.png" alt="" class="personas_atp">
-                <img src="./assets/all the pets/Personas 2.png" alt="" class="personas_atp">
-                <img src="./assets/all the pets/Personas 3.png" alt="" class="personas_atp">
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Prosessen min</h2>
             </div>
-            <div>
-                <div>
-                    <h3>Brukerreise</h3>
+            <div class="card_text">
+                <div class="card_text">
+                    <div>
+                        <h3>Design thinking</h3>
+                        <p>
+                            Jeg har brukt Design 
+                            thinking metodikken i 
+                            prosessen min. Dette er 
+                            en brukersentrert tilnærming 
+                            for å løse problemer og utvikle 
+                            innovative løsninger. Design 
+                            thinking involverer å forstå 
+                            brukernes behov, generere ideer, 
+                            lage prototyper og teste løsninger. 
+                            Målet er å skape brukervennlige 
+                            og nyskapende produkter eller 
+                            tjenester gjennom iterativ læring 
+                            og samarbeid.
+                        </p>
+
+                        <!--legg inn bilde-->
+                        <img src="" alt="" class="">
+                        <p>
+                            Jeg har brukt Design 
+                            thinking metodikken i 
+                            prosessen min. Dette er 
+                            en brukersentrert tilnærming 
+                            for å løse problemer og utvikle 
+                            innovative løsninger. Design 
+                            thinking involverer å forstå 
+                            brukernes behov, generere ideer, 
+                            lage prototyper og teste løsninger. 
+                            Målet er å skape brukervennlige 
+                            og nyskapende produkter eller 
+                            tjenester gjennom iterativ læring 
+                            og samarbeid.
+                        </p>
+                    </div>
+                    <h3>Sprint</h3>
                     <p>
-                        Denne brukerreisen har jeg tatt 
-                        utgangspunkt i en hendelse som 
-                        en av de jeg intervjuet hadde 
-                        opplevd opptil flere ganger.
+                        I prosessen brukte jeg Notion 
+                        for å holde styr på tiden min 
+                        med å dele opp oppgaven i 3 sprint.
                     </p>
+                    <div>
+                        <img src="./assets/all the pets/Sprint oppdeling.png" alt="" class="full_size_img">
+                    </div>
+                    <div>
+                        <h4>Research</h4>
+                        <img src="./assets/all the pets/Sprint 1 Research.png" alt="" class="full_size_img">
+                        <h4>Prototype</h4>
+                        <img src="./assets/all the pets/Sprint 2 prototype.png" alt="" class="full_size_img">
+                        <h4>Code</h4>
+                        <img src="./assets/all the pets/Sprint 3 code.png" alt="" class="full_size_img">
+                    </div>
                 </div>
-                <img src="" alt="" class="">
             </div>
-        </div>
-       
-    </div>
-</section>
+        </section>
 
+        <!--Et problem å løse-->
 
-<!--Konsept-->
-
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Konsept</h2>
-       
-    </div>
-    <div class="card_body">
-        <div class="card_text">
-            <p>
-                Med mine egne to hunder 
-                som inspirasjon, kom jeg 
-                opp med konseptet All the 
-                pets - en plattform der 
-                folk kan oppbevare og 
-                organisere all relevant 
-                informasjon og oppgaver 
-                knyttet til kjæledyrene 
-                sine.
-            </p>
-            <div>
-                <div>
-                    <h3>informasjonsarkitektur</h3>
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Et problem å løse</h2>
+            </div>
+            <div class="card_text">
+                <div class="card_text">
                     <p>
-                        For at løsningen skal være 
-                        oversiktelig og ryddig måtte 
-                        jeg først finne ut hva som skulle 
-                        legges inn i den. Jeg så på hva 
-                        spørreundersøkelsen sa i forhold 
-                        til hva eiere ville hatt, og 
-                        plukket ut det som var viktigst 
-                        av disse.
+                        Jeg begynte med å utforske hverdagsproblemer 
+                        folk kan stå ovenfor og kom opp med dette: 
+                        Et typisk problem jeg og en del andre 
+                        hundeeiere jeg kjenner har, er at vi 
+                        aldri husker når vi for eksempel 
+                        klippet klør på hundene sist. Det 
+                        samme kan skje med sykehistorie og 
+                        behandling. Her er det lett å miste 
+                        oversikt. Og løpetid? Ja når var det? 
+                        Derfor ville jeg vite om det var flere 
+                        som savnet en app som samlet slik 
+                        informasjon. Jeg hadde også behov for 
+                        å vite hvilke data de ville ha 
+                        loggført?
                     </p>
+                    <!--hvorfor er de ikke likt fiordelt?-->
+                    <div class="flex_grid_container">
+                        <div class="card_text">
+                            <h3>Målgruppe</h3>
+                            <p>
+                                Primært dyreeiere som trenger et 
+                                system for alt av data rundt 
+                                dyreholdet sitt. En sekundær 
+                                målgruppe jeg ikke hadde tenkt 
+                                på i utgangspunktet er oppdrettere 
+                                som trenger et system for alt av 
+                                data rundt oppdrettet sitt.
+                            </p>
+                        </div>
+                        <div class="card_text">
+                            <h3>Problemstilling</h3>
+                            <p>
+                                Hvordan hjelpe dyreeiere med 
+                                organisering og oppbevaring av 
+                                informasjon rundt dyreholdet sitt?
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
-                <img src="./assets/all the pets/informasjonsarkitektur.svg" alt="" class="">
             </div>
+        </section>
+
+
+
+
+
+
+        <!--innsikt-->
+
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Innsikt</h2>
             
-        </div>
-       
-    </div>
-</section>
+            </div>
+            <div class="card_text">
+                <div class="card_text">
+                    <p>
+                        Med tanke på mitt eget problem med 
+                        organisering av mitt hundehold 
+                        undersøkte jeg om det allerede 
+                        fantes apper som dekket dette 
+                        problemet på markedet.
+                    </p>
 
 
-<!--Lowfi prototype-->
+                    <div class="flex_grid_container">
+                        <div class="">
+                            <h3>Apper på markedet</h3>
+                            <p class="">
+                                Det første jeg legger merke 
+                                til er at jeg finner bare en 
+                                app på norsk. Ellers er det 
+                                stort sett engelske. Det er 
+                                veldig variabelt hvor mye de 
+                                forskjellige appene har av 
+                                funksjoner. Noen har lite og 
+                                andre har mye. En spesiell 
+                                funksjon jeg fant, som jeg syntes 
+                                var moro, var å kunne samle en 
+                                «flokk». Det vil si alle du er 
+                                sammen med som har dyr kan linke 
+                                seg sammmen og kunne kommentere 
+                                på hva de andre har lagt ut av 
+                                eventer.
+                            </p>
+                        </div>
+                        <div class="flex_grid_container">
+                            <img src="./assets/all the pets/konkurent1.jpeg" alt="" class="card_img">
+                            <img src="./assets/all the pets/konkurent2.PNG" alt="" class="card_img">
+                            <img src="./assets/all the pets/konkurent3.PNG" alt="" class="card_img">
+                        </div>
+                    </div>
 
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Lowfi prototype</h2>
-    </div>
-    <div class="card_body">
-        <div class="card_text ">
-            <div class="flex_container">
-                <img src="./assets/all the pets/lowfi.png" alt="" class="img_medium">
-                <!--bytt ut bildet med bedre oppløsning-->
+
+
+                    <h3>Spørreundersøkelse</h3>
+                    <p>
+                        Etter å ha undersøkt markedet gjorde 
+                        jeg en spørreundersøkelse på flere 
+                        facebook sider. Jeg spurte om det 
+                        var flere som hadde det samme 
+                        problemet med dyreholdet sitt som 
+                        jeg opplever, om de viste om slike 
+                        apper og hvilke data de eventuelt 
+                        ville ha loggført.
+                    </p>
+                    <h3>Intervju</h3>
+                    <p>
+                        Jeg intervjuet dyreiere for å få et 
+                        mer helhetlig bilde og ved et av 
+                        intervjuene fant jeg en målgruppe som 
+                        jeg ikke hadde tenkt på, den tidligere 
+                        nevnte lille overraskelsen. Dette er 
+                        oppdrettere som trenger å sjonglere 
+                        med mye papirer og informasjon for 
+                        flere dyr. Både avlsdyr og valper i 
+                        dette tilfelle. 
+                    </p>
+                    <p>
+                        Blandt annet hadde påminnelser og 
+                        lister som kunne gjennbrukes gjøre 
+                        det enklere å holde oversikt over 
+                        alt man trenger å huske når det 
+                        forventes valper. Å ha alle papirer 
+                        samlet når valpene skal til sine nye 
+                        hjem hadde også gjort det enklere for 
+                        denne gruppen og de nye eierne som også 
+                        kunne fått alt samlet på et sted.
+                    </p>
+                    <h3>Oppsummering av innsikt</h3>
+                    <p>
+                        I innsikten fant jeg et potensiale 
+                        og en plass for et produkt som All 
+                        the pets. I følge spørreundersøkelsen 
+                        min ville potensielt 2 av 3 dyreeiere 
+                        brukt en slik app. Oppdrettere hadde 
+                        trolig ønsket et verktøy hvor de kan 
+                        samle informasjon som ellers blir 
+                        oppbevart på forskjellige steder og 
+                        forum, og lett glemmes.
+                    </p>
+                </div>
+            
+            </div>
+        </section>
+
+
+        <!--Personas-->
+
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Personas</h2>
+            </div>
+            <div class="card_text">
+                <div class="card_text">
+                    <p>
+                        Basert på innsikten jeg har 
+                        lagde disse peronasene.
+                    </p>
+                    <div class="">
+                        <img src="./assets/all the pets/Personas 1.png" alt="" class="full_size_img">
+                        <img src="./assets/all the pets/Personas 2.png" alt="" class="full_size_img">
+                        <img src="./assets/all the pets/Personas 3.png" alt="" class="full_size_img">
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Brukerreise</h3>
+                            <p>
+                                Denne brukerreisen har jeg tatt 
+                                utgangspunkt i en hendelse som 
+                                en av de jeg intervjuet hadde 
+                                opplevd opptil flere ganger.
+                            </p>
+                        </div>
+                        <img src="./assets/all the pets/brukerreise.jpg" alt="" class="full_size_img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Konsept-->
+
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Konsept</h2>
+            
+            </div>
+            <div class="card_text">
+                <div class="card_text">
+                    <p>
+                        Med mine egne to hunder 
+                        som inspirasjon, kom jeg 
+                        opp med konseptet All the 
+                        pets - en plattform der 
+                        folk kan oppbevare og 
+                        organisere all relevant 
+                        informasjon og oppgaver 
+                        knyttet til kjæledyrene 
+                        sine.
+                    </p>
+                    <div>
+                        <div>
+                            <h3>informasjonsarkitektur</h3>
+                            <p>
+                                For at løsningen skal være 
+                                oversiktelig og ryddig måtte 
+                                jeg først finne ut hva som skulle 
+                                legges inn i den. Jeg så på hva 
+                                spørreundersøkelsen sa i forhold 
+                                til hva eiere ville hatt, og 
+                                plukket ut det som var viktigst 
+                                av disse.
+                            </p>
+                        </div>
+                        <img src="./assets/all the pets/informasjonsarkitektur.svg" alt="" class="full_size_img">
+                    </div>
+                    
+                </div>
+            
+            </div>
+        </section>
+
+
+        <!--Lowfi prototype-->
+
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Lowfi prototype</h2>
+            </div>
+            <div class="card_text">
+                <div class="card_text ">
+                    <div class="flex_container">
+                        <img src="./assets/all the pets/lowfi.png" alt="" class="full_size_img">
+                        <!--bytt ut bildet med bedre oppløsning-->
+                        <p>
+                            Ut i fra informasjonsarkitekturen 
+                            lagde jeg en lowfi prototype. 
+                            Å lage prototyper er nok en av 
+                            de morsomste oppgavene jeg gjør 
+                            på slike oppgaver. Derfor har nok 
+                            gjort en litt større jobb med denne 
+                            enn jeg hadde behøvd, siden det er 
+                            et MVP (minimum viable product) jeg 
+                            trenger å lage først.
+                        </p>
+                    </div>
+                    <h3>Brukertest</h3>
+                    <p>
+                        Jeg gjorde 4 brukertester på denne 
+                        prototypen. Det jeg tar med meg er 
+                        at notater og lister burde gå under 
+                        blyanten for å ha det lett tilgjengelig. 
+                        Dette viste meg hvor viktig ikoner 
+                        er for hva man velger å trykke på. 
+                    </p>
+                    <img src="" alt="" class="">
+                </div>
+            </div>
+        </section>
+
+
+        <!--Desigsystem-->
+
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Desigsystem</h2>
+            </div>
+            <div class="card_text">
+                <div class="card_text">
+                    <h3>Farge og kontrast</h3>
+                    <div>
+                        <img src="./assets/all the pets/Farger uten border.jpg" alt="" class="full_size_img">
+                        <p>
+                            Jeg valgte disse fargene selv 
+                            om kontrasten mellom dem alene 
+                            ikke er etter WCAG fordi jeg 
+                            lager kontrast i border som 
+                            skiller elementene fra hverandre. 
+                            Dette gjør kontrasten istedet. 
+                            Designet er inspirert av trenden 
+                            neu brutalisme.
+                        </p>
+                    </div>
+                </div>
+                <div class="card_text">         
+                    <!--bytt til svg-->
+                    <div>
+                    <h3>Typografi</h3>
+                    <img src="./assets/all the pets/Typografi.jpg" alt="" class="full_size_img">
+                    </div>
+                    <div>
+                    <h3>Komponenter</h3>
+                    <img src="./assets/all the pets/Komponenter.png" alt="" class="full_size_img">
+                    </div>       
+                </div>
+            </div>
+        </section>
+
+
+        <!--Highfi Prototype-->
+
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Highfi Prototype</h2>
+            </div>
+            <div class="card_text">
+            <div class="card_text">
+                <img src="./assets/all the pets/HiFi Prototype.png" alt="" class="full_size_img">
+                <h3>Brukertest og videre utvikling</h3>
                 <p>
-                    Ut i fra informasjonsarkitekturen 
-                    lagde jeg en lowfi prototype. 
-                    Å lage prototyper er nok en av 
-                    de morsomste oppgavene jeg gjør 
-                    på slike oppgaver. Derfor har nok 
-                    gjort en litt større jobb med denne 
-                    enn jeg hadde behøvd, siden det er 
-                    et MVP (minimum viable product) jeg 
-                    trenger å lage først.
+                ......................
                 </p>
+                <img src="./assets/all the pets/videre_utvikling_atp.png" alt="" class="full_size_img">
             </div>
-            <h3>Brukertest</h3>
-            <p>
-                Jeg gjorde 4 brukertester på denne 
-                prototypen. Det jeg tar med meg er 
-                at notater og lister burde gå under 
-                blyanten for å ha det lett tilgjengelig. 
-                Dette viste meg hvor viktig ikoner 
-                er for hva man velger å trykke på. 
-            </p>
-            <img src="" alt="" class="">
-        </div>
-    </div>
-</section>
+            </div>
+        </section>
 
 
-<!--Desigsystem-->
+        <!--Landingsside-->
 
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Desigsystem</h2>
-       
-    </div>
-    <div class="card_body">
-        <div class="flex_container">
-            <h3>Farge og kontrast</h3>
-            <div>
-                <img src="./assets/all the pets/Farger uten border.jpg" alt="" class="img_medium">
-                <p>
-                    Jeg valgte disse fargene selv 
-                    om kontrasten mellom dem alene 
-                    ikke er etter WCAG fordi jeg 
-                    lager kontrast i border som 
-                    skiller elementene fra hverandre. 
-                    Dette gjør kontrasten istedet. 
-                    Designet er inspirert av trenden 
-                    neu brutalisme.
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Landingsside</h2>
+            </div>
+            <div class="card_text">
+            <div class="card_text flex_grid_container_atp">
+                <p class="">
+                    I dette prosjektet ønsker 
+                    jeg å ta deg med på en reise 
+                    fra å ikke vite stort om universell 
+                    utforming til å bli den beste i 
+                    klassen! 
                 </p>
+                <div class="grid_landingpage">
+                <img src="./assets/all the pets/Surface Laptop Studio.png" alt="" class="img_landingsside">
+                <a href="">Gå til prototype</a>
+                </div>
             </div>
-        </div>
-        <div class="flex_container">         
-            <!--bytt til svg-->
-            <div>
-            <h3>Typografi</h3>
-            <img src="./assets/all the pets/Typografi.jpg" alt="" class="img_medium">
             </div>
-            <div>
-            <h3>Komponenter</h3>
-            <img src="./assets/all the pets/Komponenter.png" alt="" class="img_medium">
-            </div>       
-        </div>
-    </div>
-</section>
+        </section>
 
 
-<!--Highfi Prototype-->
+        <!--Hva lærte jeg-->
 
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Highfi Prototype</h2>
-    </div>
-    <div class="card_text">
-        <img src="./assets/all the pets/HiFi Prototype.png" alt="" class="img_1_colum">
-        <h3>Brukertest og videre utvikling</h3>
-        <p>
-           ......................
-        </p>
-        <img src="./assets/all the pets/videre_utvikling_atp.png" alt="" class="img_2_colum">
-    </div>
-</section>
+        <section class="card card_atp">
+            <div class="card_header card_header_color_atp flex_container">
+                <h2 class="">Hva lærte jeg</h2>
+            </div>
+            <div class="card_text">
+            <div class="card_text">
+                    <p>
+                        Dette er en løsning jeg 
+                        gjerne vil komme tilbake til en 
+                        dag. I dette prosjektet lærte jeg 
+                        meg å organisere tiden min. 
+                        Jeg brukte Notion til å ha oversikt 
+                        over oppgaver og frister jeg har 
+                        satt for meg selv. Jeg liker å 
+                        planlegge en frist for meg selv 
+                        litt før deadline for å kunne ta 
+                        ta tak i problemer som eventuelt 
+                        dukker opp. Jeg vet jo at uansett 
+                        oppgave så har de en tendens til å 
+                        ta den tiden du setter deg. Har 
+                        også lært mye i figma under dette 
+                        prosjektet.
+                    </p>
+            </div>
+            </div>
+        </section>
 
-
-<!--Landingsside-->
-
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Landingsside</h2>
-    </div>
-    <div class="card_body flex_container">
-        <p class="p_left">
-            I dette prosjektet ønsker 
-            jeg å ta deg med på en reise 
-            fra å ikke vite stort om universell 
-            utforming til å bli den beste i 
-            klassen! 
-        </p>
-        <div class="">
-        <img src="./assets/all the pets/Surface Laptop Studio.png" alt="" class="img_landingsside">
-        <a href="">Gå til prototype</a>
-        </div>
-    </div>
-</section>
+        <section class="back_container ">
+            <a href="./Index.html" class="a_button_uuninja back_button">Tilbake</a>
+            <div class="next_project">
+                <h3 class="h3_back">Neste prosjekt!</h3>
 
 
-<!--Hva lærte jeg-->
 
-<section class="card card_allthepets">
-    <div class="card_header color_header_allthepets">
-        <h2 class="">Hva lærte jeg</h2>
-    </div>
-    <div class="card_body">
-            <p>
-                Dette er en løsning jeg 
-                gjerne vil komme tilbake til en 
-                dag. I dette prosjektet lærte jeg 
-                meg å organisere tiden min. 
-                Jeg brukte Notion til å ha oversikt 
-                over oppgaver og frister jeg har 
-                satt for meg selv. Jeg liker å 
-                planlegge en frist for meg selv 
-                litt før deadline for å kunne ta 
-                ta tak i problemer som eventuelt 
-                dukker opp. Jeg vet jo at uansett 
-                oppgave så har de en tendens til å 
-                ta den tiden du setter deg. Har 
-                også lært mye i figma under dette 
-                prosjektet.
-            </p>
-    </div>
-</section>
+                <!--bytt ut bildet på dette prosjektet-->
+
+
+
+                <a href="./uuninja.html"><img src="./assets/all the pets/back_to_project_ATP.png" alt="Neste prosjekt" class="back_img"></a>
+            </div>
+        </section>
+
+        <footer>
+            <h2 class="h2_footer">Takk for oppmerksomheten din!</h2>
+            <h3 class=""> Ta gjerne kontakt her:</h3>
+            <h3 class="">janitaomdahlreiraa@gmail.com</h3>
+        </footer>
+    </main>
+</body>
