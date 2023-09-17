@@ -25,10 +25,10 @@
     --font-size-desktop-herotext:6rem;
     --font-size-desktop-link:1.5rem;
     /*Font size---Mobil*/
-    --font-size-mobil-h1:3rem;
-    --font-size-mobil-h2:2.25rem;
-    --font-size-mobil-h3:1.5rem;
-    --font-size-mobil-subtitle:1.25rem;
+    --font-size-mobil-h1:2.5rem;
+    --font-size-mobil-h2:2rem;
+    --font-size-mobil-h3:1.75rem;
+    --font-size-mobil-subtitle:1.5rem;
     --font-size-mobil-bodycopy:1rem;
 
 
@@ -47,6 +47,9 @@
 
     --color-button-uun: var(--color-light-UUN);
     --color-button-atp: var(--color-light-ATP);
+
+    --color-black: #212121;
+    --color-white: #fff;
 /*------Border-------*/
     --border-radius-big:2rem;
     --border-radius-small:1rem;
@@ -61,7 +64,7 @@ main {
     padding-top: 80px;
 }
 header {
-    background-color: #212121;
+    background-color: var(--color-black);
     display: flex;
     padding: 0.5rem;
     justify-content: space-between;
@@ -121,11 +124,11 @@ ul {
 
 p {
     color: var(--color-text-white);
-    font-size: var(--font-size-desktop-bodycopy);
+    font-size: var(--font-size-mob);
     margin: 1rem 0;
 }
 footer {
-    background-color: #212121;
+    background-color: var(--color-black);
     text-align: center;
     padding: 5rem;
     margin: 5rem 0 0 0 ;
@@ -147,8 +150,8 @@ h3 {
 }
 h4 {
     color: var(--color-text-white);
-    font-weight: var(--font-weight-desktop-light);
-    font-size: 28px;
+    font-weight: var(--font-weight-mobil-light);
+    font-size: 1.5rem;
 
 }
 
@@ -159,8 +162,8 @@ h4 {
 
 .hero_banner {
         display: flex;
-        background-color: #212121;
-        margin: 2rem;
+        background-color: var(--color-black);
+        margin: 0.5rem;
         border-radius: var(--border-radius-big);
         padding: 2.5rem;
         flex-wrap: wrap;
@@ -168,7 +171,7 @@ h4 {
 }
 
 .hero_img {
-    width: 40%;
+    width: 80%;
     margin: auto;
 }
 .hero_text {
@@ -176,15 +179,16 @@ h4 {
     
 }
 
-.first_card {
-    border-radius: var(--border-radius-big);
-    margin: 1rem 5rem 5rem 5rem;
-}
+
 
 /*-----universal classer-----*/
 .card {
     border-radius: var(--border-radius-big);
-    margin: 5rem;
+    margin: 1.5rem;
+}
+.first_card {
+    border-radius: var(--border-radius-big);
+    margin: 1rem 1.5rem 5rem 1.5rem;
 }
 .card_header {
     padding: 0.5rem;
@@ -198,13 +202,15 @@ h4 {
     display: flex;
     background-color: var(--color-text-white);
     border-radius: var(--border-radius-small);
+    flex-wrap: wrap;
 }
+
 .icon {
-    height: 5rem;
-    margin: 0 0.5rem;
-    width: 5rem;
-    padding: 0.5rem;
+    width: 20%;
+    height: auto;
+    margin: 0 0.2rem;
     
+
 }
 .card_button {
     padding: 1rem 2rem;
@@ -241,15 +247,15 @@ h4 {
 }   
 .hero_banner_projects {
     display: flex;
-    background-color: #212121;
-    margin: 2rem;
+    background-color: var(--color-black);
+    margin: 0.5rem;
     border-radius: var(--border-radius-big);
     padding: 2.5rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 .card_img {
-    width: 40%;
+    width: 70%;
     padding: 2rem;
     justify-self: center; /*fjernes?*/
 }
@@ -266,6 +272,15 @@ h4 {
 
 .img_hero_project {
     width: 50%;
+}
+
+
+
+
+
+.centerd {
+    
+    
 }
 
 
@@ -327,11 +342,11 @@ h4 {
     justify-content: center;
 }
 .card_oppgave {
-    margin: 5rem 5rem 5rem 5rem;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
     border-radius: var(--border-radius-big);
 }
 .card_prosess {
-    margin: 5rem 5rem 5rem 5rem;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
     border-radius: var(--border-radius-big);
 }
 
@@ -482,7 +497,7 @@ h4 {
     width: 40%;
     margin: auto;
     border-radius: var(--border-radius-small);
-    border: 3px solid #ffffff;
+    border: 3px solid var(--color-white);
 }
 
 
@@ -499,6 +514,13 @@ h4 {
 
 .h2_footer {
     color: var(--color-text-white);
+    font-size: 1.5rem
+}
+.h3_footer {
+    font-size: 1rem;
+}
+.h4_footer {
+    font-size: 1rem;
 }
 .p_footer {
     color: var(--color-text-white);
@@ -514,6 +536,20 @@ h4 {
 
 
 
+@media screen and (min-width: 500px) {
+    .h2_footer {
+        font-weight: var(--font-weight-mobil-regular);
+        font-size: var(--font-size-mobil-h2);
+    }
+    .h3_footer {
+        font-weight: var(--font-weight-mobil-regular);
+        font-size: var(--font-size-mobil-h3);
+    }
+    .h4_footer {
+        font-weight: var(--font-weight-mobil-light);
+        font-size: 1.5rem;
+    }
+}
 
 
 @media screen and (min-width: 700px) {
@@ -543,7 +579,72 @@ h4 {
         font-weight: var(--font-weight-desktop-regular);
         font-size: var(--font-size-desktop-h3);
     }
+    .icon {
+        height: 5rem;
+        margin: 0 0.5rem;
+        width: 5rem;
+        padding: 0.5rem;
+        
+    }
+    .card {
+        margin: 5rem;
+    }
+    .first_card {
+        border-radius: var(--border-radius-big);
+        margin: 1rem 5rem 5rem 5rem;
+    }
+    .hero_banner {
+        display: flex;
+        background-color: var(--color-black);
+        margin: 2rem;
+        border-radius: var(--border-radius-big);
+        padding: 2.5rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    p {
+        color: var(--color-text-white);
+        font-size: var(--font-size-desktop-bodycopy);
+        margin: 1rem 0;
+    }
+    h1 {
+        text-align: center;
+        font-size: var(--font-size-mobil-h1);
+        font-weight: var(--font-weight-mobil-regular);
+    }
+    h2 {
+        color: var(--color-text-black);
+        font-weight: var(--font-weight-mobil-regular);
+        font-size: var(--font-size-mobil-h2);
+    }
+    h3 {
+        color: var(--color-text-white);
+        font-weight: var(--font-weight-mobil-regular);
+        font-size: var(--font-size-mobil-h3);
+    }
+    h4 {
+        color: var(--color-text-white);
+        font-weight: var(--font-weight-desktop-light);
+        font-size: 28px;
+    }
+    .card_img {
+        width: 60%;
+        padding: 2rem;
+        justify-self: center; /*fjernes?*/
+    }
+    .card_oppgave {
+        margin: 5rem 5rem 5rem 5rem;
+        border-radius: var(--border-radius-big);
+    }
+    .card_prosess {
+        margin: 5rem 5rem 5rem 5rem;
+        border-radius: var(--border-radius-big);
+    }
+
+    
 }
+
+
 @media screen and (min-width: 900px) {
     .flex_container {
         display: flex;
@@ -587,6 +688,11 @@ h4 {
     .order_atp_text {
         order: 2;
     }  
+    .card_img {
+        width: 40%;
+        padding: 2rem;
+        justify-self: center; /*fjernes?*/
+    }
 }
 @media screen and (min-width: 1000px) {
     .flex_grid_container_text {
