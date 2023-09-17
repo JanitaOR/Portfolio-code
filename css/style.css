@@ -51,12 +51,15 @@
     --border-radius-big:2rem;
     --border-radius-small:1rem;
     --border:0.4rem solid #212121;
+    --border-small:0.2rem solid #212121
 
 }
 
 /*-------Tags-------*/
 
-
+main {
+    padding-top: 80px;
+}
 header {
     background-color: #212121;
     display: flex;
@@ -66,8 +69,9 @@ header {
 .logo {
     align-self: center;
     margin: 0.5rem;
-    max-width: 150px;
-    height: auto; 
+    /*max-width: 150px;
+    height: auto;*/
+    height: 64px; 
     
 }
 nav {
@@ -85,8 +89,9 @@ nav {
 
 a {
     color: var(--color-text-white);
+    text-decoration: none;
 }
-
+/*kilde: */
 .a_button:link, .a_button:visited {
     background-color: var(--color-light-ATP);
     color: var(--color-text-black);
@@ -412,13 +417,17 @@ h4 {
     flex-wrap: nowrap;
 }
 .back_button {
-    padding: 1rem 2rem;
+    /*padding: 1rem 2rem;
     font-size: var(--font-size-desktop-buttontext);
     border-radius: var(--border-radius-small);
     font-weight: var(--font-weight-desktop-bold);
     margin: 2rem;
     background-color: var(--color-button-uun);
+    border: var(--border);
+    color: var(--color-text-black);*/
+    border: var(--border-small);
 }
+
 .h3_back {
     color: var(--color-text-black);
 }
@@ -560,10 +569,10 @@ h4 {
     }   
     .grid_landingpage {
         display: grid;
-        j
-       
-        
     }
+        
+}
+
     
    
     
@@ -583,6 +592,10 @@ h4 {
         flex-wrap: nowrap;
     }   
 }
+
+
+
+
 
 
 
