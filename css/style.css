@@ -146,7 +146,8 @@ h2 {
 h3 {
     color: var(--color-text-white);
     font-weight: var(--font-weight-mobil-regular);
-    font-size: var(--font-size-mobil-h3);
+   /* font-size: var(--font-size-mobil-h3);*/
+   font-size: 1.5rem;
 }
 h4 {
     color: var(--color-text-white);
@@ -256,8 +257,9 @@ h4 {
 }
 .card_img {
     width: 70%;
-    padding: 2rem;
+    /*padding: 2rem;*/
     justify-self: center; /*fjernes?*/
+    padding: 1rem;
 }
 
 
@@ -279,9 +281,7 @@ h4 {
 
 
 
-.card_text_block {
-    
-}
+
 
 
 
@@ -336,6 +336,7 @@ h4 {
 /*--prosjektside uuninja--*/
 .card_inspo {
     margin: auto;
+    width: 100%;
 }
 .oppgave_prosess {
     display: block;
@@ -348,6 +349,14 @@ h4 {
 .card_prosess {
     margin: 1.5rem 1.5rem 1.5rem 1.5rem;
     border-radius: var(--border-radius-big);
+}
+.img_design_system {
+    width: 30%;
+}
+
+.design_system {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -556,6 +565,10 @@ h4 {
         align-items: center;
         flex-wrap: nowrap;
     }
+    .card_inspo {
+        margin: auto;
+        width: 30%;
+    }
 }
 
 
@@ -606,7 +619,7 @@ h4 {
         margin: 2rem;
         border-radius: var(--border-radius-big);
         padding: 2.5rem;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
         justify-content: space-between;
     }
     p {
@@ -647,7 +660,7 @@ h4 {
         margin: 5rem 5rem 5rem 5rem;
         border-radius: var(--border-radius-big);
     }
-
+    
     
 }
 
@@ -700,6 +713,8 @@ h4 {
         padding: 2rem;
         justify-self: center; /*fjernes?*/
     }
+   
+
 }
 @media screen and (min-width: 1000px) {
     .flex_grid_container_text {
@@ -721,6 +736,7 @@ h4 {
     .card {
         margin: 5rem 10%;
     }
+    
 }
 
 
