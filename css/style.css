@@ -350,6 +350,14 @@ h4 {
     margin: 1.5rem 1.5rem 1.5rem 1.5rem;
     border-radius: var(--border-radius-big);
 }
+.img_design_system {
+    width: 30%;
+}
+
+.design_system {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
