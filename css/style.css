@@ -281,9 +281,7 @@ h4 {
 
 
 
-.card_text_block {
-    
-}
+
 
 
 
@@ -613,7 +611,7 @@ h4 {
         margin: 2rem;
         border-radius: var(--border-radius-big);
         padding: 2.5rem;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
         justify-content: space-between;
     }
     p {
